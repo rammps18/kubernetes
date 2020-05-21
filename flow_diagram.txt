@@ -1,0 +1,8 @@
+kubectl writes to the API server (kubectl run myserver --image=nginx)
+API server will authenticate and Authorize. Upon validation, it will write to etcd
+Upon write to etcd. API server invoke the scheduler
+Scheduler decides which node the pod should run and return data to the API server. API server will return data to the etcd.
+API server will invoke kubelet in the node decided by the scheduler
+kubelet communicates to the docker daemon via docker socket to create container
+kubelet will update the status of the pod back to the API server
+API server will write the status back to the etcd
