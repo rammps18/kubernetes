@@ -1,0 +1,8 @@
+kubectl get pod
+
+kubectl apply -f <yamlfile>
+
+kubectl explain pod
+
+kubectl api-resources
+
