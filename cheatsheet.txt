@@ -6,3 +6,6 @@ kubectl explain pod
 
 kubectl api-resources
 
+Links: api resources
+
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/
