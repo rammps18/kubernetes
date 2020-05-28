@@ -13,3 +13,22 @@ https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/
 https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#-strong-api-overview-strong-
 
 https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+kubectl describe pod
+
+kubectl exec -it nginxwebserver bash
+
+shell command on container 2
+--------------------------------
+
+apt-get update && apt-get install net-tools
+
+ifconfig
+
+kubectl -exec -t -c container2 sh
+
+netstat -ntlp
+
+wget 127.0.0.1:80
+
+cat index.html
