@@ -9,3 +9,7 @@ kubectl api-resources
 Links: api resources
 
 https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/
+
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#-strong-api-overview-strong-
+
+https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata
