@@ -32,3 +32,8 @@ netstat -ntlp
 wget 127.0.0.1:80
 
 cat index.html
+----------------------------------------
+
+docker build -t base01
+
+docker container run -dt --name base01 base01
