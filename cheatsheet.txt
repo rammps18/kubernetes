@@ -1,3 +1,3 @@
 To create a pod
 kubectl run mywebserver --image=nginx
-kubectl exec -it mywebserver bash
+kubectl exec -it mywebserver -- bash
