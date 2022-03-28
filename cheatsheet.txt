@@ -2,3 +2,46 @@ To create a pod
 kubectl run mywebserver --image=nginx
 kubectl exec -it mywebserver -- bash
 kubectl delete pod mywebserver
+
+
+1. Add labels to node
+
+------------------------
+
+C:\Users\416814>kubectl label nodes gke-cluster-1-default-pool-44841b97-tfv7 env=dev
+
+node/gke-cluster-1-default-pool-44841b97-tfv7 labeled
+
+ 
+
+2. Create deployment
+
+-------------------------
+
+kubectl create deployment my-first-dep --image=nginx
+
+ 
+
+3. Update deployment
+
+-----------------------
+
+C:\Users\416814>kubectl set image deployment my-first-dep nginx=nginx:1.16.1
+
+deployment.apps/my-first-dep image updated
+
+4. Kubectl get events sort by timestamp(Not working)
+----------------------------------------
+
+kubectl get events --sort-by='.metadata.creationTimestamp' -A
+
+5. Create replicasets
+---------------------------------------
+kubectl
+6. Delete resources
+---------------------------
+C:\Users\416814>kubectl delete all -l app=my-first-dep
+
+pod "my-first-dep-7d95b6bb88-xv95q" deleted
+service "my-first-dep-service" deleted
+deployment.apps "my-first-dep" deleted
